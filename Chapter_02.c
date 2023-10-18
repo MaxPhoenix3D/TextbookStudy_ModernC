@@ -172,28 +172,30 @@ int main(void)
 
 // 2.7 and programming projects
 
-#include <stdio.h>
-#define PI 3.14159265359
+// #include <stdio.h>
+// #define PI 3.14159265359
 
-int main()
-{
+//int main()
+//{
 	// Project 1 
+	/*
 	printf("       *\n");
 	printf("      * \n");
 	printf("     *  \n");
 	printf("*   *   \n");
 	printf(" * *    \n");
 	printf("  *     \n");
-
+	*/
 
 	// Project 2
+	/*
 	double v = 0;
 	double r = 10;
 
 	v = (4.0f / 3.0f) * (PI) * (r * r * r);
 
 	printf("%lf\n", v);
-
+	*/
 
 	// Project 3
 	/*
@@ -278,7 +280,7 @@ int main()
 	*/
 
 	// Project 8
-
+	/*
 	double loanRemaining = 0;
 	double interestRate = 0;
 	double monthlyPayment = 0;
@@ -309,5 +311,5 @@ int main()
 	loanRemaining -= monthlyPayment;
 
 	printf("Month 3: %lf\n", loanRemaining);
-
-}
+	*/
+//}
