@@ -37,7 +37,30 @@ int main()
 	x = 839.21f;
 
 	printf("|%d|%5d|%-5d|%5.3d|\n", i, i, i, i);
-	printf("|%10.3f|%10.3e|%-10g|\n", x, x, x);
+	printf("|%10.3f|%10.3e|%-10g|\n\a", x, x, x);
 
 	return 0;
+
+	// \n is referred to as an escape sequence
+	// These allow us to include characters that would normally cause compiler errors
+	// Such as characters that don't print or have special meanings to the compiler such as "
+	// \a will cause the code to make a sound when it is reached
+	
+	// Scanf works in the same way as printf
+	// The amount of conversion specifications must match the amount of input variables
+	// Each conversion must match up with each input variable's type
+	// The dereferencer is usually required -- not always
+	// We will get to pointers in chapter 11
+	// Scanf can be unforgiving -- a lot of programmers avoid it for simply importing character strings and converting
+	// the numbers manually after the fact 
+	// Code can break if the wrong information is input to a scanf statement
+	// There are ways to check that it is formatted correctly
+	// But the examples in this textbook won't use them in the example code
+	// Will be covered in 22.3
+	// When using numbers, scanf skips over any whitespace >1, it only looks for the starts and ends of numbers
+	// This means that using spaces or new lines between numbers are both valid 
+	// It searches for a + or - or a digit, then reads until it reaches a non-digit
+	// It can also find a decimal place or an e (exponent) without error
+	// 
+	//
 }
